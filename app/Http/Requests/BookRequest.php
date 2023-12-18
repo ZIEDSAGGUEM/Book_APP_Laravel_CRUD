@@ -24,6 +24,7 @@ class BookRequest extends FormRequest
         return [
             'img'=>["bail","required","string","max:600"],
             'name'=>["bail","required","string","min:3"],
+            'price'=>["bail","required","numeric"],
 
             'description'=>["bail","required","string","max:200"],
 

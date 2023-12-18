@@ -57,7 +57,7 @@ class BookController extends Controller
     public function update(BookRequest $request, Book $book)
     {
         $book->update($request->all());
-        return redirect()->route('books.index')->with('info',"Product Updated");
+        return redirect()->route('books.index')->with('info',"Book Updated");
     }
 
     /**

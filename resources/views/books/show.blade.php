@@ -12,12 +12,16 @@
 <div class="row">
     <div class="col-1 h5">Image:</div>
     <div class="col">
-        <img src="{{ $book->img }}" style="height: 25; width: 50;" />
+        <img src="{{ $book->img }}" style="height: 75px; width: 75px;" />
     </div>
 </div>
 <div class="row">
     <div class="col-1 h5">Name:</div>
     <div class="col">{{$book->name}}</div>
+</div>
+<div class="row">
+    <div class="col-1 h5">Price:</div>
+    <div class="col">{{$book->price}}</div>
 </div>
 <div class="row">
     <div class="col-1 h5">Description:</div>

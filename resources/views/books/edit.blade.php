@@ -25,6 +25,13 @@
         <div class="alert alert-danger">{{$message}}</div>
         @enderror
     </div>
+    <div class="col-md-6">
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" class="form-control" value="{{$book->price}}"/>
+        @error('price')
+        <div class="alert alert-danger">{{$message}}</div>
+        @enderror
+    </div>
 
     <div class="col-md-6">
         <label for="description">Description:</label>

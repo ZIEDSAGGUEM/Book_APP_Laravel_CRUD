@@ -20,13 +20,15 @@
         <tr>
             <th>Image</th>
             <th>Name</th>
+            <th>Price</th>
             <th>Description</th>
             <th colspan="3" class="col-3">Action</th>
         </tr>
 @foreach ( $books as $book )
 <tr>
-    <td><img src="{{ $book->img }}" alt="Book Image"></td>
+    <td><img src="{{ $book->img }}" style="height: 200px;width:200px" alt="Book Image"></td>
     <td>{{$book->name}}</td>
+    <td>{{"$". $book->price }}</td>
     <td>{{$book->description}}</td>
     <td><a class="btn btn-primary" href="{{route("books.show",$book)}}">Look</a></td>
     <td><a class="btn btn-warning" href="{{route("books.edit",$book)}}">Update</a></td>
